@@ -2,8 +2,8 @@ package bibliotekspenge_udvidelse;
 
 public abstract class Title {
 
-    private String title;
-    private String literatureType;
+    private final String title;
+    private final String literatureType;
     double rate = 0.4;
 
     public Title(String title, String literatureType) {
