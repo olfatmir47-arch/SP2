@@ -1,14 +1,13 @@
 package bibliotekspenge_udvidelse;
 
-public class AudioBook extends Title {
+public class AudioBook extends PhysicalTitle {
 
     private final int durationInMinutes;
-    private final int copies;
+
 
     public AudioBook(String title, String literatureType, int copies, int durationInMinutes) {
-        super(title, literatureType);
+        super(title, literatureType, copies);
         this.durationInMinutes = durationInMinutes;
-        this.copies = copies;
 
     }
 

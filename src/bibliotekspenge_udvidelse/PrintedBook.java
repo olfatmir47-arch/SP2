@@ -1,13 +1,12 @@
 package bibliotekspenge_udvidelse;
 
-public class PrintedBook extends Title {
+public class PrintedBook extends PhysicalTitle {
 
     private final int pages;
-    private final int copies;
 
     public PrintedBook(String title, String literatureType, int copies, int pages) {
 
-        super(title, literatureType);
+        super(title, literatureType, copies);
         this.copies = copies;
         this.pages = pages;
 

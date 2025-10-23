@@ -2,9 +2,9 @@ package bibliotekspenge_udvidelse;
 
 public abstract class Title {
 
-    protected String title;
-    protected String literatureType;
-    protected static final double RATE = 0.067574;
+    private String title;
+    private String literatureType;
+    double rate = 0.4;
 
     public Title(String title, String literatureType) {
         this.title = title;
@@ -13,7 +13,7 @@ public abstract class Title {
 
     public double calculateRoyalty() {
         double royalty = 0;
-        royalty = calculatePoints() * RATE;
+        royalty = calculatePoints() * rate;
         return royalty;
     }
 
