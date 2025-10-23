@@ -1,3 +1,5 @@
+package bibliotekspenge_udvidelse;
+
 public class PrintedBook extends Title {
 
     private final int pages;

@@ -1,3 +1,5 @@
+package bibliotekspenge_udvidelse;
+
 public abstract class Title {
 
     protected String title;

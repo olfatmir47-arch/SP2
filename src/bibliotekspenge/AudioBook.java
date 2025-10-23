@@ -1,3 +1,5 @@
+package bibliotekspenge;
+
 public class AudioBook extends Title {
 
     private final int durationInMinutes;
