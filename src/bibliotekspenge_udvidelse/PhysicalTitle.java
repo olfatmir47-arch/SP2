@@ -1,14 +1,14 @@
 package bibliotekspenge_udvidelse;
 
-public abstract class PhysicalTitle extends Title{
+public abstract class PhysicalTitle extends Title {
 
-   protected int copies;
+    protected int copies;
 
-   public PhysicalTitle(String title, String literatureType, int copies){
-      super(title, literatureType);
-       this.copies = copies;
+    public PhysicalTitle(String title, String literatureType, int copies) {
+        super(title, literatureType);
+        this.copies = copies;
 
-   }
+    }
 
-   public abstract double calculatePoints();
+    public abstract double calculatePoints();
 }

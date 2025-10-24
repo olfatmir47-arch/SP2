@@ -4,7 +4,7 @@ public abstract class Title {
 
     private final String title;
     private final String literatureType;
-    double rate = 0.4;
+    protected double rate = 0.4;
 
     public Title(String title, String literatureType) {
         this.title = title;

@@ -4,29 +4,31 @@ import java.util.ArrayList;
 
 public class Author {
 
-     private final String name;
+    private final String name;
     private ArrayList<Title> titles = new ArrayList<>();
 
-    public Author(String name){
+    public Author(String name) {
         this.name = name;
 
     }
-    public void addTitle(Title title){
+
+    public void addTitle(Title title) {
         titles.add(title);
 
     }
 
-    public double calculateRoyalties(){
-double total = 0.0;
+    public double calculateRoyalties() {
+        double total = 0.0;
 
-for(Title t: titles){
-    total = t.calculateRoyalty();
+        for (Title t : titles) {
+            total = t.calculateRoyalty();
 
 
-} return total;
+        }
+        return total;
     }
 
-   public String getName(){
+    public String getName() {
         return name;
     }
 

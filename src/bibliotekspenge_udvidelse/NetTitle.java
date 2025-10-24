@@ -6,7 +6,7 @@ public abstract class NetTitle extends Title {
     private int reach;
     private int use;
 
-    public NetTitle(String title, String literatureType, int availability, int reach, int use){
+    public NetTitle(String title, String literatureType, int availability, int reach, int use) {
 
         super(title, literatureType);
         this.availability = availability;
@@ -14,9 +14,9 @@ public abstract class NetTitle extends Title {
         this.use = use;
     }
 
-    public double getPseudoCopies(){
+    public double getPseudoCopies() {
 
-        return ((getReach() * 5) +(getAvailability() * 0.5) + getUse());
+        return ((getReach() * 5) + (getAvailability() * 0.5) + getUse());
 
     }
 
