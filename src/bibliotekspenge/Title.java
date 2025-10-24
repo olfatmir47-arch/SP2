@@ -2,9 +2,9 @@ package bibliotekspenge;
 
 public abstract class Title {
 
-    protected String title;
-    protected String literatureType;
-    protected static final double RATE = 0.067574;
+    private String title;
+    private final String literatureType;
+    private static final double RATE = 0.067574;
 
     public Title(String title, String literatureType) {
         this.title = title;
@@ -17,9 +17,10 @@ public abstract class Title {
         return royalty;
     }
 
-    public abstract double calculatePoints();
+    protected abstract double calculatePoints();
+    //bliver defineret i sub-klasser
 
-    public double convertLiteratureType() {
+    protected double convertLiteratureType() {
         switch (literatureType) {
             case "BI", "TE":
                 return 3.0;

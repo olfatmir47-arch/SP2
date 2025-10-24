@@ -14,7 +14,7 @@ public class PrintedBook extends Title {
 
     }
 
-    public double calculatePoints() {
+    protected double calculatePoints() {
         double points = pages * convertLiteratureType() * copies;
         return points;
 
